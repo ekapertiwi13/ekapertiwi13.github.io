@@ -1,11 +1,36 @@
 <html>
 <head>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+ 
+ 
+ <style>
+ #mapid { height: 180px; }
+ </style>
+ 
 </head>
+
 
 <body>
 	<p> 
 		Terseraahlaah
 	</p>
+	
+	<div id="mapid"></div> <!-- ini container peta tempat menaruh peta-->
+	<script>
+	var mymap = L.map('mapid').setView([-7, 110], 13); /*ini bahasa javascript>
+	
+	L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 10
+	}).addTo(mymap);
+
+
+	</script>
+	
+	
+	
 </body>
 
 
